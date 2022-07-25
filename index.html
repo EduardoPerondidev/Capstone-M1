@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>WearTake</title>
+</head>
+
+<body>
+    <header class="header-container">
+    <div class="header">
+        <h1 class="logo">WearTake</h1>
+        <nav class="menu-buttons">
+            <button class="nav-button active">Todos</button>
+            <button class="nav-button">Acessórios</button>
+            <button class="nav-button">Calçados</button>
+            <button class="nav-button">Camisetas</button>
+        </nav>
+    </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <ul class="item-list">
+                <!-- <li class="no-items">
+                    <h3 class="no-items-text">Desculpe, não encontramos o item pesquisado...</h3>
+                </li> -->
+                <!-- <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/jaqueta.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Camisetas</h3>
+                        <h2 class="item-name">Lightweight Jacket</h2>
+                        <p class="item-description">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/gorro.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Acessórios</h3>
+                        <h2 class="item-name">Black Hat</h2>
+                        <p class="item-description">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/mascara.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Acessórios</h3>
+                        <h2 class="item-name">Mask</h2>
+                        <p class="item-description">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/camiseta_branca.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Camisetas</h3>
+                        <h2 class="item-name">T-shirt</h2>
+                        <p class="item-description">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/camiseta_preta.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Camisetas</h3>
+                        <h2 class="item-name">Short-Sleeve T-Shirt</h2>
+                        <p class="item-description">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <figure class="item-img">
+                        <img src="./img/moletom.svg" alt="" class="img">
+                    </figure>
+                    <div class="product-content">
+                        <h3 class="item-category">Camisetas</h3>
+                        <h2 class="item-name">Champion Packable Jacket</h2>
+                        <p class="item-description">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
+                        <p class="item-price">R$ 100.00</p>
+                        <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                    </div>
+                </li> -->
+                </ul>
+        
+            <aside class="aside">
+                <form action="" class="search-form">
+                    <input type="text" class="search-input" placeholder="Digite aqui sua pesquisa">
+                    <button class="search-button">Pesquisar</button>
+                </form>
+            <div class="cart-div empty">
+                <h2 class="cart-title">Carrinho de compras</h2>
+                <!-- <ul class="cart-list">
+                    <li class="cart-item">
+                        <figure class="cart-figure">
+                            <img src="./img/jaqueta.svg" alt="" class="cart-img">
+                        </figure>
+                        <div class="item-content">
+                            <p class="cart-name">Lightweight Jacket</p>
+                            <p class="cart-price">R$ 100.00</p>
+                            <button class="cart-remove-button">Remover produto</button>
+                        </div>
+                    </li>
+                    <li class="cart-item">
+                        <figure class="cart-figure">
+                            <img src="./img/gorro.svg" alt="" class="cart-img">
+                        </figure>
+                        <div class="item-content">
+                            <p class="cart-name">Black Hat</p>
+                            <p class="cart-price">R$ 100.00</p>
+                            <button class="cart-remove-button">Remover produto</button>
+                        </div>
+                    </li>
+                    <li class="cart-item">
+                        <figure class="cart-figure">
+                            <img src="./img/camiseta_branca.svg" alt="" class="cart-img">
+                        </figure>
+                        <div class="item-content">
+                            <p class="cart-name">T-Shirt</p>
+                            <p class="cart-price">R$ 100.00</p>
+                            <button class="cart-remove-button">Remover produto</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart-total">
+                    <p class="quantity-text">Quantidade: <span class="quantity">3</span></p>
+                    <p class="total-text">Total: <span class="total-price">R$ 200.00</span></p>
+                </div> -->
+                <div class="empty-cart">
+                    <h2 class="empty-title">Carrinho Vazio</h2>
+                    <p class="empty-text">Adicione itens</p>
+                </div>
+            </div>
+
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
